@@ -29,8 +29,8 @@ jobs:
       - name: Login to Google Cloud
         uses: google-github-actions/auth@v1
         with: 
-          credentials_json: ${{ secrets.}}
-          project_id: ${{ secrets.}}
+          credentials_json: ${{ secrets.GOOGLECLOUD_TOKEN}}
+          project_id: ${{ secrets.KUBERNETESPROY_NAME}}
 
       - name: Login to Kubernetes
         uses: simenandre/setup-gke-gcloud-auth-plugin@v1
